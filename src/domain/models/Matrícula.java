@@ -1,10 +1,10 @@
 package domain.models;
 
 public class Matrícula {
-    private Integer id;
-    private String curso;
+    private static Integer id;
+    private static String curso;
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
     }
 
@@ -12,7 +12,7 @@ public class Matrícula {
         this.id = id;
     }
 
-    public String getCurso() {
+    public static String getCurso() {
         return curso;
     }
 

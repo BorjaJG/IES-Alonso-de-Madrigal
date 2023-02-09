@@ -5,7 +5,7 @@ public class Curso {
     private String nombre;
     private String descripcion;
 
-    public Integer getId() {
+    public Integer getId(int i) {
         return id;
     }
 
@@ -13,7 +13,7 @@ public class Curso {
         this.id = id;
     }
 
-    public String getNombre() {
+    public String getNombre(String s) {
         return nombre;
     }
 
@@ -21,11 +21,14 @@ public class Curso {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
+    public String getDescripcion(String desde_septiembre_a_julio) {
         return descripcion;
     }
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+
+
 }

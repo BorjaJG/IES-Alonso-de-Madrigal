@@ -1,10 +1,12 @@
 package domain.models;
 
 public class Docencia extends Aula{
-    private Integer sillas;
-    private String tipoPizarra;
+    private static Integer sillas;
+    private static String tipoPizarra;
 
-    public Integer getSillas() {
+
+
+    public static Integer getSillas() {
         return sillas;
     }
 
@@ -12,7 +14,7 @@ public class Docencia extends Aula{
         this.sillas = sillas;
     }
 
-    public String getTipoPizarra() {
+    public static String getTipoPizarra() {
         return tipoPizarra;
     }
 

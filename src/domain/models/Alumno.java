@@ -1,16 +1,16 @@
 package domain.models;
 
 public class Alumno {
-    private Integer id;
-    private String nombre;
-    private String apellidos;
-    private String dni;
-    private String direccion;
-    private String madre;
-    private String padre;
-    private String email;
+    private static Integer id;
+    private static String nombre;
+    private static String apellidos;
+    private static String dni;
+    private static String direccion;
+    private static String madre;
+    private static String padre;
+    private static String email;
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
     }
 
@@ -18,7 +18,7 @@ public class Alumno {
         this.id = id;
     }
 
-    public String getNombre() {
+    public static String getNombre() {
         return nombre;
     }
 
@@ -26,7 +26,7 @@ public class Alumno {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
+    public static String getApellidos() {
         return apellidos;
     }
 
@@ -34,7 +34,7 @@ public class Alumno {
         this.apellidos = apellidos;
     }
 
-    public String getDni() {
+    public static String getDni() {
         return dni;
     }
 
@@ -42,7 +42,7 @@ public class Alumno {
         this.dni = dni;
     }
 
-    public String getDireccion() {
+    public static String getDireccion() {
         return direccion;
     }
 
@@ -50,7 +50,7 @@ public class Alumno {
         this.direccion = direccion;
     }
 
-    public String getMadre() {
+    public static String getMadre() {
         return madre;
     }
 
@@ -58,7 +58,7 @@ public class Alumno {
         this.madre = madre;
     }
 
-    public String getPadre() {
+    public static String getPadre() {
         return padre;
     }
 
@@ -66,11 +66,13 @@ public class Alumno {
         this.padre = padre;
     }
 
-    public String getEmail() {
+    public static String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }

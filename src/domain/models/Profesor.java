@@ -1,15 +1,16 @@
 package domain.models;
 
 public class Profesor {
-    private Integer id;
-    private String nombre;
-    private String apellidos;
-    private String dni;
-    private String direccion;
+    public static String getId;
+    private static Integer id;
+    private static String nombre;
+    private static String apellidos;
+    private static String dni;
+    private static String direccion;
     private String tituloAcdemico;
     private String fechaAlta;
 
-    public Integer getId() {
+    public static Integer getId(int i) {
         return id;
     }
 
@@ -17,7 +18,7 @@ public class Profesor {
         this.id = id;
     }
 
-    public String getNombre() {
+    public static String getNombre(String maria) {
         return nombre;
     }
 
@@ -25,7 +26,7 @@ public class Profesor {
         this.nombre = nombre;
     }
 
-    public String getApellidos() {
+    public static String getApellidos() {
         return apellidos;
     }
 
@@ -33,7 +34,7 @@ public class Profesor {
         this.apellidos = apellidos;
     }
 
-    public String getDni() {
+    public static String getDni() {
         return dni;
     }
 
@@ -41,7 +42,7 @@ public class Profesor {
         this.dni = dni;
     }
 
-    public String getDireccion() {
+    public static String getDireccion() {
         return direccion;
     }
 
@@ -49,7 +50,7 @@ public class Profesor {
         this.direccion = direccion;
     }
 
-    public String getTituloAcdemico() {
+    public String getTituloAcdemico(String profesor) {
         return tituloAcdemico;
     }
 
@@ -57,11 +58,13 @@ public class Profesor {
         this.tituloAcdemico = tituloAcdemico;
     }
 
-    public String getFechaAlta() {
+    public String getFechaAlta(int i) {
         return fechaAlta;
     }
 
     public void setFechaAlta(String fechaAlta) {
         this.fechaAlta = fechaAlta;
     }
+
+
 }
