@@ -1,10 +1,10 @@
 package domain.models;
 
 public class Ordenadores extends Aula{
-    private Integer numOrdenadores;
-    private String tipoOrdenadores;
+    private static Integer numOrdenadores;
+    private static String tipoOrdenadores;
 
-    public Integer getNumOrdenadores() {
+    public static Integer getNumOrdenadores() {
         return numOrdenadores;
     }
 
@@ -12,7 +12,7 @@ public class Ordenadores extends Aula{
         this.numOrdenadores = numOrdenadores;
     }
 
-    public String getTipoOrdenadores() {
+    public static String getTipoOrdenadores() {
         return tipoOrdenadores;
     }
 

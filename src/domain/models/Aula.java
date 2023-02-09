@@ -1,11 +1,11 @@
 package domain.models;
 
 public class Aula {
-    private Integer id;
-    private String planta;
+    private static Integer id;
+    private static String planta;
     private Integer capacidad;
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
     }
 
@@ -13,7 +13,7 @@ public class Aula {
         this.id = id;
     }
 
-    public String getPlanta() {
+    public static String getPlanta() {
         return planta;
     }
 
@@ -21,7 +21,7 @@ public class Aula {
         this.planta = planta;
     }
 
-    public Integer getCapacidad() {
+    public Integer getCapacidad(int i) {
         return capacidad;
     }
 
